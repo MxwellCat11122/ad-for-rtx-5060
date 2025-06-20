@@ -137,3 +137,196 @@ header p {
   font-size: 1rem;
   line-height: 1.6;
 }
+/* Блюр для заднего контента */
+.blur > *:not(.popup):not(script):not(style) {
+  filter: blur(6px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Всплывающие окна */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #111;
+  color: white;
+  padding: 20px;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,255,0,0.3);
+  z-index: 9999;
+  display: none;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #00ff00;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background: #00cc00;
+}
+/* Блюр основного контента */
+#main-content.blur {
+  filter: blur(6px);
+  pointer-events: none;
+  user-select: none;
+}
+/* Эффект размытия */
+#main-content.blur {
+  filter: blur(6px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Всплывающее окно */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #111;
+  color: white;
+  padding: 20px;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,255,0,0.3);
+  z-index: 9999;
+  display: none;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #00ff00;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background: #00cc00;
+}
+#main-content.blur {
+  filter: blur(6px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #111;
+  color: white;
+  padding: 20px;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,255,0,0.3);
+  z-index: 9999;
+  display: none;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #00ff00;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background: #00cc00;
+}
+.fps-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.15);
+}
+
+.fps-section h2 {
+  font-size: 2.5rem;
+  color: #00ff00;
+  margin-bottom: 30px;
+}
+
+.fps-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fps-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,255,0,0.1);
+}
+
+.fps-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.fps-text p {
+  margin: 0 0 8px;
+  color: #bbbbbb;
+}
+
+.fps-bar {
+  height: 10px;
+  width: 100%;
+  background: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fps-bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: var(--fps);
+  background: linear-gradient(90deg, #00ff00, #00cc00);
+  transition: width 0.5s;
+}
+
+
+
+

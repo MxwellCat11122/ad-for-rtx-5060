@@ -2,36 +2,108 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RTX 5060 — Будущее графики</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
 </head>
 <body>
+  <div id="main-content">
+    <header>
+      <h1>GeForce RTX 5060</h1>
+      <p>Следующий уровень производительности. Добро пожаловать в будущее.</p>
+    </header>
 
-<header>
-  <h1>GeForce RTX 5060</h1>
-  <p>Следующий уровень производительности. Добро пожаловать в будущее.</p>
-</header>
+    <section class="main">
+      <img src="./photos/rtx5060.jpg" alt="RTX 5060">
+      <h2>Мощь. Скорость. Реальность.</h2>
+      <p>RTX 5060 обеспечивает непревзойдённую производительность...</p>
+      <a class="cta-button" href="#">Узнать больше</a>
+    </section>
 
-<section class="main">
-  <img src="./photos/rtx5060.jpg" alt="RTX 5060">
-  <h2>Мощь. Скорость. Реальность.</h2>
-  <p>RTX 5060 обеспечивает непревзойдённую производительность благодаря архитектуре Ada Lovelace, трассировке лучей нового поколения и поддержке DLSS 4.0. Идеально для игр в FullHD, работы с ИИ и стриминга.</p>
-  <a class="cta-button" href="#">Узнать больше</a>
-</section>
+    <section class="gif-section">
+      <h2>RTX 5060 — Будущее графики</h2>
+      <img src="./photos/rtx5060.gif" class="rtx-gif">
+      <div class="gif-description">
+        <h3>Погрузитесь в мир невероятной графики!</h3>
+        <p>GeForce RTX 5060 выводит ваш игровой опыт на новый уровень...</p>
+      </div>
+    </section>
+<section class="fps-section">
+  <h2>FPS в популярных играх</h2>
+  <div class="fps-list">
 
-<!-- Новый блок с гифкой -->
-<section class="gif-section">
-  <h2>RTX 5060 — Будущее графики</h2>
-  <img src="./photos/rtx5060.gif" alt="RTX 5060 Gif" class="rtx-gif">
-  
-  <!-- Рекламный текст под гифкой -->
-  <div class="gif-description">
-    <h3>Погрузитесь в мир невероятной графики!</h3>
-    <p>GeForce RTX 5060 выводит ваш игровой опыт на новый уровень. С поддержкой трассировки лучей и технологий AI, эта видеокарта обеспечит вам потрясающие визуальные эффекты и гладкую игру на самых высоких настройках. Преобразите ваши игры с RTX 5060 — ускорьте работу с графикой, наслаждайтесь безупречным FullHD и создавайте потрясающий контент в реальном времени.</p>
+    <div class="fps-item">
+      <img src="./photos/icons/cyberpunk.webp" alt="Cyberpunk">
+      <div class="fps-text">
+        <p><strong>Cyberpunk 2077:</strong> 120 FPS (Ultra + DLSS)</p>
+        <div class="fps-bar" style="--fps: 80%"></div>
+      </div>
+    </div>
+
+    <div class="fps-item">
+      <img src="./photos/icons/CODMW3.jpg" alt="COD MW3">
+      <div class="fps-text">
+        <p><strong>Call of Duty: MW3:</strong> 144 FPS (High)</p>
+        <div class="fps-bar" style="--fps: 90%"></div>
+      </div>
+    </div>
+
+    <div class="fps-item">
+      <img src="./photos/icons/Fortnite.jpg" alt="Fortnite">
+      <div class="fps-text">
+        <p><strong>Fortnite:</strong> 200 FPS (Performance Mode)</p>
+        <div class="fps-bar" style="--fps: 100%"></div>
+      </div>
+    </div>
+
+    <div class="fps-item">
+      <img src="./photos/icons/GTAV.webp" alt="GTA V">
+      <div class="fps-text">
+        <p><strong>GTA V:</strong> 160 FPS (Very High)</p>
+        <div class="fps-bar" style="--fps: 85%"></div>
+      </div>
+    </div>
+
+    <div class="fps-item">
+      <img src="./photos/icons/valorant.png" alt="Valorant">
+      <div class="fps-text">
+        <p><strong>Valorant:</strong> 300+ FPS (Max Settings)</p>
+        <div class="fps-bar" style="--fps: 100%"></div>
+      </div>
+    </div>
+
+    <div class="fps-item">
+      <img src="./photos/icons/CS2.jpg" alt="CS2">
+      <div class="fps-text">
+        <p><strong>CS2:</strong> 350 FPS (Low Settings)</p>
+        <div class="fps-bar" style="--fps: 100%"></div>
+      </div>
+    </div>
+
+    <div class="fps-item">
+      <img src="./photos/icons/Subnautica.webp" alt="Subnautica">
+      <div class="fps-text">
+        <p><strong>Subnautica:</strong> 90 FPS (High, Ocean Quality: Medium)</p>
+        <div class="fps-bar" style="--fps: 65%"></div>
+      </div>
+    </div>
   </div>
 </section>
 
+  </div>
+
+  <!-- Всплывающее окно cookie -->
+  <div id="cookie-popup" class="popup">
+    <p>Мы используем cookie. Принимаете?</p>
+    <button onclick="acceptCookies()">Принять</button>
+    <button onclick="declineCookies()">Отклонить</button>
+  </div>
+
+  <!-- Всплывающее окно выбора языка -->
+  <div id="language-popup" class="popup">
+    <p>Выберите язык сайта:</p>
+    <button onclick="setLanguage('ru')">Русский</button>
+    <button onclick="setLanguage('en')">English</button>
+  </div>
 </body>
 </html>
