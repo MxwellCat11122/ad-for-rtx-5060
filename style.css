@@ -1,0 +1,139 @@
+/* Обнуляем стили по умолчанию */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at center, #0d0d0d, #000000);
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 0 20px;
+  transition: background 0.3s, color 0.3s; /* Плавное изменение фона и цвета */
+}
+
+body.dark-theme {
+  background: radial-gradient(circle at center, #0d0d0d, #000000);
+}
+
+body.light-theme {
+  background: radial-gradient(circle at center, #1a1a1a, #333333);
+  color: #000; /* Цвет текста в светлой теме */
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  color: #00ff00; /* Зеленый цвет */
+  text-shadow: 0 0 10px #00ff00;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+/* Основной блок */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #111111;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,255,0,0.15); /* Зеленое свечение */
+}
+
+.main img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.main h2 {
+  color: #00ff00;
+  margin-bottom: 15px;
+}
+
+.main p {
+  color: #bbbbbb;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Кнопка */
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background: #00ff00; /* Зеленая кнопка */
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #00ff00;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #00cc00;
+  box-shadow: 0 0 20px #00cc00;
+  transform: scale(1.05);
+}
+
+/* Новый блок с гифкой */
+.gif-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px; /* Такой же максимальный размер, как и у основного блока */
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #111111;
+  border-radius: 12px; /* Округленные углы */
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.15); /* Зеленое свечение */
+}
+
+.gif-section h2 {
+  font-size: 2.5rem;
+  color: #00ff00;
+  margin-bottom: 20px;
+}
+
+.rtx-gif {
+  max-width: 80%; /* Ограничиваем размер гифки так же, как и для картинки */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+/* Рекламный текст под гифкой */
+.gif-description {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #bbbbbb;
+}
+
+.gif-description h3 {
+  font-size: 2rem;
+  color: #00ff00;
+  margin-bottom: 15px;
+}
+
+.gif-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
